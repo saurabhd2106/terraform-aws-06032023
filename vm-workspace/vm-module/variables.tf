@@ -13,3 +13,9 @@ variable "instance_type"{
     default = "t2.micro"
     type = string
 }
+
+variable "ec2-name" {
+    default = "myVm"
+    type = string
+
+}
