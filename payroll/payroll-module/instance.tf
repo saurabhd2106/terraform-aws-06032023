@@ -6,5 +6,9 @@ resource "aws_instance" "app_server" {
         Name = "${var.vm-name}-${var.region}"
     }
 
+    depends_on = [
+      aws_dynamodb_table.db,
+      aws_s3_bucket.data
+    ]
     
 }

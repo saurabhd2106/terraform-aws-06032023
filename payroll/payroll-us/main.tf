@@ -6,7 +6,10 @@ module "payroll-us" {
     region = "us-east-1"
     instance_type = "t3.micro"
     vm-name = "payroll-vm"
-    bucket = "test-bucket-07032023-12343534"
+    bucket = lower("test-BUCKET-07032023-12343534")
     db_name = "employee-data"
+
+    
   
 }
+

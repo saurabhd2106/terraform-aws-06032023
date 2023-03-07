@@ -6,15 +6,15 @@ module "vm1" {
 
     instance_type = "t3.micro"
 
-    ec2-name = var.vm-name[count.index]
+    ec2-name = each.value
 
-    count = length(var.vm-name)
+    for_each = var.vm-name
 
   
 }
 
 variable "vm-name" {
 
-    type = list(string)
+    type = set(string)
 
 }

@@ -2,3 +2,8 @@ ec2-instance/.terraform/
 vpc-assignment/.terraform/
 payroll/payroll-us/.terraform
 vm-workspace/vm1/.terraform
+custom-module/.terraform/
+*/.terraform/
+*/*/.terraform/
+*/terraform.tfstate
+*/*/terraform.tfstate
